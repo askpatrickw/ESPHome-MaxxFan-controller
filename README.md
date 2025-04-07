@@ -58,6 +58,7 @@ The schematics and PCB are a prototype!!!  Please do not try to use as-is.  Late
 - This repository now uses a proper external component implementation in `/homeassistant/esphome/components/maxxfan/`
 - The original `custom_outputs.h` file is preserved for historical reference
 - Both the simplified MaxxFan-only configuration (`maxxfan-lite.yaml`) and the full configuration with AC control use this new external component structure
+- **Important**: You need to update the GPIO pin configurations in your YAML file to match the pins you're using on your ESP32. Look for the `globals` section with variables like `gpio_up_pin`, `gpio_down_pin`, etc. and set them to your specific pin numbers.
 
 ## Notes
 
